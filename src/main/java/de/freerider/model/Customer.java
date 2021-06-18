@@ -20,6 +20,14 @@ public class Customer {
         this.status = Status.New;
     }
 
+    public Customer(String firstName, String lastName, String contact) {
+        this.id = null;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.contact = contact;
+        this.status = Status.New;
+    }
+
     public String getId() {
         return this.id;
     }
