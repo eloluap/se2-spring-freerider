@@ -1,4 +1,4 @@
-package de.freerider.model;
+package de.freerider.datamodel;
 
 public class Customer {
 

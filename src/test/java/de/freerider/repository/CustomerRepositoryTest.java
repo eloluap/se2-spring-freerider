@@ -3,6 +3,8 @@ package de.freerider.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import de.freerider.datamodel.Customer;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
@@ -18,8 +20,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.ArrayList;
-
-import de.freerider.model.Customer;
 
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)

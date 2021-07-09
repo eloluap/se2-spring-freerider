@@ -1,4 +1,4 @@
-package de.freerider.model;
+package de.freerider.datamodel;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
-import de.freerider.model.Customer.Status;
+import de.freerider.datamodel.Customer;
+import de.freerider.datamodel.Customer.Status;
 
 @SpringBootTest
 public class CustomerTest {

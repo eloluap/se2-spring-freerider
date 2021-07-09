@@ -6,10 +6,12 @@ import java.util.HashMap;
 import java.util.Optional;
 
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Qualifier;
 
-import de.freerider.model.Customer;
+import de.freerider.datamodel.Customer;
 
 @Component
+@Qualifier("CustomerRepository_Impl")
 public class CustomerRepository implements CrudRepository<Customer, String> {
 
     private final IDGenerator idGen = new IDGenerator("C", IDGenerator.IDTYPE.NUM, 6);
